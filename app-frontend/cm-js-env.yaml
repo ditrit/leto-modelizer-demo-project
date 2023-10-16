@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dev-cm-js
+data:
+  env.js: |
+    window.env = {
+      ENVIRONMENT: 'development',
+      CONTACT_US: 'CONTACT',
+      CONNECT_ENVIRONMENT:'development',
+      CONNECT_CLIENT_ID:'1234567890',
+      CONNECT_ENDPOINT:'localhost' ,
+      CONNECT_SCOPE:'openid mail profile',
+      CONNECT_REDIRECT_URI:'localhost:8080/redirect' ,
+      CONNECT_BASE_URL: '',
+      ENABLE_SPLASH_SCREEN:false
+    };

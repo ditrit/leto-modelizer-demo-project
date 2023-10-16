@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: frontend-dev
+    app.kubernetes.io/component: frontend
+  name: frontend-dev-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: frontend-dev
+      app.kubernetes.io/component: frontend
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: frontend-dev
+        app.kubernetes.io/component: frontend
+    spec:
+      containers:
+        - image: localhost:IMAGE_TAG
+          imagePullPolicy: Always
+          name: frontend-dev-cn
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources:
+            limits:
+              cpu: 300m
+              memory: 1Gi
+            requests:
+              cpu: 100m
+              memory: 1Gi
+          volumeMounts:
+            - mountPath: /etc/nginx/conf.d
+              name: cm-nginx
+            - mountPath: /home/toto/plop
+              name: cm-js
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      securityContext: {}
+      volumes:
+        - configMap:
+            name: dev-cm-nginx
+          name: cm-nginx
+        - configMap:
+            name: dev-cm-js
+          name: cm-js

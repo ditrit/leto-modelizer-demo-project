@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dev-svc
+  labels:
+    app.kubernetes.io/name: frontend-dev
+    app.kubernetes.io/component: frontend
+spec:
+  ports:
+  - name: 8080-tcp
+    port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/name: frontend-dev
+    app.kubernetes.io/component: frontend
+  type: ClusterIP
