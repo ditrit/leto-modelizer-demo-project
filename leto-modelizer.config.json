@@ -220,14 +220,23 @@
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
+      },
+      "aws_ami_1": {
+        "x": 79,
+        "y": 107,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
       }
     }
   },
   ".github/workflows/CI.yml": {
     "githubator-plugin": {
       "workflow_1": {
-        "x": -428.9666748046875,
-        "y": 0.1168212890625,
+        "x": -305.2416687011719,
+        "y": -456.76202392578125,
         "width": 3345,
         "height": 1890,
         "needsResizing": false,
@@ -634,6 +643,46 @@
         "x": 1232.70361328125,
         "y": 1472.2421875,
         "width": 935,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      }
+    }
+  },
+  ".github/workflows": {
+    "githubator-plugin": {
+      "workflow_1": {
+        "x": 274,
+        "y": 244,
+        "width": 250,
+        "height": 480,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "trigger_1": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_1": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "job_1": {
+        "x": 30,
+        "y": 140,
+        "width": 185,
         "height": 225,
         "needsResizing": false,
         "needsPositioning": false,
