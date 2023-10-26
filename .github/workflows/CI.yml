@@ -76,16 +76,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.14
       - name: Setup npm
         run: npm install -g npm@8.19.3
       - uses: actions/cache/restore@v3
         with:
           path: node_modules
           key: ${{ runner.os }}-build-cache-node-modules-${{ hashFiles('./package-lock.json') }}
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.14
       - name: Run unit tests
         run: export NODE_OPTIONS=--max_old_space_size=8192 && npm run test
       - name: Upload line coverage report
@@ -128,7 +128,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
       - name: Download line coverage report
         uses: actions/download-artifact@v3
@@ -156,13 +155,13 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-build-cache-node-modules-${{ hashFiles('./package-lock.json') }}
       - name: Build application
-        run: |
-          npm install -g npm@8.19.3 &&  \
-          npm ci && \
-          npm run plugin:install -- repository-name="githubator-plugin" repository-url="https://github.com/ditrit/githubator-plugin.git#0.2.5" && \
-          npm run plugin:install -- repository-name="terrator-plugin" repository-url="https://github.com/ditrit/terrator-plugin.git#0.7.0" && \
-          npm run plugin:init && \
-          docker build -t leto-modelizer -f DockerfileE2E .
+        run: npm install -g npm@8.19.3 &&  \
+npm ci && \
+npm run plugin:install -- repository-name="githubator-plugin" repository-url="https://github.com/ditrit/githubator-plugin.git#0.2.5" && \
+npm run plugin:install -- repository-name="terrator-plugin" repository-url="https://github.com/ditrit/terrator-plugin.git#0.7.0" && \
+npm run plugin:init && \
+docker build -t leto-modelizer -f DockerfileE2E .
+
       - name: Run application
         run: docker run -p 8080:80 -d leto-modelizer
       - name: Run functional tests
