@@ -1,0 +1,13 @@
+name: Test CI
+
+on:
+  pull_request:
+    types: [synchronized, opened]
+
+jobs:
+  job_1:
+    name: Test Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo step
+        run: echo 'Workflow started'
