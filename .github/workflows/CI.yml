@@ -9,7 +9,8 @@ jobs:
     name: Delete bot comment(s)
     runs-on: ubuntu-latest
     steps:
-      - uses: izhangzhihao/delete-comment@master
+      - name: Delete comments
+        uses: izhangzhihao/delete-comment@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           delete_user_name: github-actions[bot]
@@ -19,7 +20,8 @@ jobs:
     name: Check branch name
     runs-on: ubuntu-latest
     steps:
-      - uses: deepakputhraya/action-branch-name@master
+      - name: Check branch name
+        uses: deepakputhraya/action-branch-name@master
         with:
           regex: '^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/[a-z0-9_.-]+$'
           allowed_prefixes: 'feature,bugfix,improvement,library,prerelease,release,hotfix'
@@ -128,7 +130,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
       - name: Download line coverage report
         uses: actions/download-artifact@v3
@@ -156,13 +157,13 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-build-cache-node-modules-${{ hashFiles('./package-lock.json') }}
       - name: Build application
-        run: |
-          npm install -g npm@8.19.3 &&  \
-          npm ci && \
-          npm run plugin:install -- repository-name="githubator-plugin" repository-url="https://github.com/ditrit/githubator-plugin.git#0.2.5" && \
-          npm run plugin:install -- repository-name="terrator-plugin" repository-url="https://github.com/ditrit/terrator-plugin.git#0.7.0" && \
-          npm run plugin:init && \
-          docker build -t leto-modelizer -f DockerfileE2E .
+        run: npm install -g npm@8.19.3 &&  \
+npm ci && \
+npm run plugin:install -- repository-name="githubator-plugin" repository-url="https://github.com/ditrit/githubator-plugin.git#0.2.5" && \
+npm run plugin:install -- repository-name="terrator-plugin" repository-url="https://github.com/ditrit/terrator-plugin.git#0.7.0" && \
+npm run plugin:init && \
+docker build -t leto-modelizer -f DockerfileE2E .
+
       - name: Run application
         run: docker run -p 8080:80 -d leto-modelizer
       - name: Run functional tests
