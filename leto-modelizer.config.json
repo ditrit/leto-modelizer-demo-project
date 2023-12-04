@@ -226,8 +226,426 @@
   ".github/workflows/CI.yml": {
     "githubator-plugin": {
       "workflow_1": {
-        "x": -428.9666748046875,
-        "y": 0.1168212890625,
+        "x": 358,
+        "y": 156,
+        "width": 3345,
+        "height": 1890,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": true
+      },
+      "trigger_1": {
+        "x": 12,
+        "y": 12,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_1": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "delete-comments": {
+        "x": 172,
+        "y": 12,
+        "width": 185,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_2": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "branch-naming-rules": {
+        "x": 407,
+        "y": 12,
+        "width": 185,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_3": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_4": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_5": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_6": {
+        "x": 480,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_7": {
+        "x": 630,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_8": {
+        "x": 780,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_9": {
+        "x": 930,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "build": {
+        "x": 1700.192138671875,
+        "y": 51.822547912597656,
+        "width": 1085,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_10": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_11": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_12": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_13": {
+        "x": 480,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_14": {
+        "x": 630,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "check-style": {
+        "x": 146.05621337890625,
+        "y": 674.6450805664062,
+        "width": 785,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_15": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_16": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_17": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_18": {
+        "x": 480,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_19": {
+        "x": 630,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_20": {
+        "x": 780,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "unit-tests": {
+        "x": 1213.96240234375,
+        "y": 691.6387939453125,
+        "width": 935,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_21": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_22": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_23": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_24": {
+        "x": 480,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_25": {
+        "x": 630,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_26": {
+        "x": 780,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_27": {
+        "x": 930,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "check-dependencies": {
+        "x": 2205.586669921875,
+        "y": 678.5281982421875,
+        "width": 1085,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_28": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_29": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_30": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "sonarcloud": {
+        "x": 1458.6075439453125,
+        "y": 1103.002197265625,
+        "width": 485,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_31": {
+        "x": 30,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_32": {
+        "x": 180,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_33": {
+        "x": 330,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_34": {
+        "x": 480,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_35": {
+        "x": 630,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "step_36": {
+        "x": 780,
+        "y": 30,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "e2e-tests": {
+        "x": 1232.70361328125,
+        "y": 1472.2421875,
+        "width": 935,
+        "height": 225,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      }
+    }
+  },
+  ".github/workflows": {
+    "githubator-plugin": {
+      "workflow_1": {
+        "x": 358,
+        "y": 156,
         "width": 3345,
         "height": 1890,
         "needsResizing": false,
