@@ -86,135 +86,135 @@
   },
   "basic-infra": {
     "terrator-plugin": {
-      "eu-west-3a": {
-        "x": 993,
-        "y": 126,
+      "aws_availability_zones.eu-west-3a": {
+        "x": 1317,
+        "y": 313,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "eu-west-3b": {
-        "x": 994,
-        "y": 222,
+      "aws_availability_zones.eu-west-3b": {
+        "x": 1319,
+        "y": 425,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "eu-west-3c": {
-        "x": 994,
-        "y": 318,
+      "aws_availability_zones.eu-west-3c": {
+        "x": 1317,
+        "y": 536,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "main_vpc": {
-        "x": 490,
-        "y": 197,
-        "width": 476,
-        "height": 481,
+      "aws_vpc.main_vpc": {
+        "x": 753,
+        "y": 291,
+        "width": 505,
+        "height": 502,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": true
       },
-      "frontend_subnet_az1": {
-        "x": 323.99998474121094,
-        "y": 38,
+      "aws_subnet.frontend_subnet_az1": {
+        "x": 361,
+        "y": 34,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "frontend_subnet_az2": {
-        "x": 162,
-        "y": 126,
+      "aws_subnet.frontend_subnet_az2": {
+        "x": 199,
+        "y": 184,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "frontend_subnet_az3": {
-        "x": 30,
-        "y": 250,
+      "aws_subnet.frontend_subnet_az3": {
+        "x": 78,
+        "y": 328,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "ubuntu": {
-        "x": 993,
-        "y": 32,
+      "aws_ami.ubuntu": {
+        "x": 1315,
+        "y": 200,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "frontend_secgroup_ssh": {
-        "x": 522,
-        "y": 809,
+      "aws_security_group.frontend_secgroup_ssh": {
+        "x": 947,
+        "y": 937,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "lb_secgroup_https": {
-        "x": 378,
-        "y": 745,
+      "aws_security_group.lb_secgroup_https": {
+        "x": 491,
+        "y": 747,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "lb_secgroup_http": {
-        "x": 331,
-        "y": 8,
+      "aws_security_group.lb_secgroup_http": {
+        "x": 487,
+        "y": 280,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "frontend_lb": {
-        "x": 47,
-        "y": 307,
+      "aws_lb.frontend_lb": {
+        "x": 235,
+        "y": 500,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "https_lb_listener": {
-        "x": 190,
-        "y": 695,
+      "aws_lb_listener.https_lb_listener": {
+        "x": 237,
+        "y": 935,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "http_lb_listener": {
-        "x": 14,
-        "y": 730,
+      "aws_lb_listener.http_lb_listener": {
+        "x": 307,
+        "y": 835,
         "width": 110,
         "height": 80,
         "needsResizing": false,
         "needsPositioning": false,
         "manuallyResized": false
       },
-      "lb_target": {
-        "x": 828,
-        "y": 797,
+      "aws_lb_target_group.lb_target": {
+        "x": 784,
+        "y": 946,
         "width": 110,
         "height": 80,
         "needsResizing": false,
